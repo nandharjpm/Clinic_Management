@@ -1,0 +1,151 @@
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.login-box {
+    width: 300px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+.login-box h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.login-box input[type="text"],
+.login-box input[type="email"],
+.login-box input[type="password"],
+.login-box input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    padding: 8px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.logimg{
+    display: flex;
+}
+
+.logimg {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logimg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-box form div {
+    margin-bottom: 15px;
+}
+
+.login-box form div label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-box form div input[type="text"],
+.login-box form div input[type="email"],
+.login-box form div input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box form div input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+.login-box .btn {
+    margin-top: 20px;
+}
+
+.login-box .btn button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6666;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box .btn button:hover {
+    background-color: #ff4d4d;
+}

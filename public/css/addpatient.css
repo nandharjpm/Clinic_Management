@@ -1,0 +1,111 @@
+body, h1, h2, form, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    background-color: #e5e4e4;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #444;
+    border-bottom: 2px solid #d4af37; /* Gold color for premium feel */
+    padding-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px; /* Adjust for spacing */
+}
+
+.col-md-6 {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="datetime-local"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    font-size: 1em;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, select:focus, textarea:focus {
+    border-color: #d4af37; /* Gold color for premium feel */
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.text-danger {
+    font-size: 0.875em;
+    color: #d9534f; /* Red color for errors */
+}
+
+button {
+    background-color: #d4af37; /* Gold color for premium feel */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bfa85f; /* Darker gold color on hover */
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%;
+        padding: 15px 0; /* Adjust for spacing on smaller screens */
+    }
+}

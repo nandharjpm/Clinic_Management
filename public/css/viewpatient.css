@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color for better readability */
+}
+.container {
+    margin-top: 20px;
+    background-color: #ffffff; /* White background for the content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+ul li:last-child {
+    border-bottom: none;
+}
+.btn-primary {
+    margin-top: 20px;
+}
