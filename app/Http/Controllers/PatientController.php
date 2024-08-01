@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\PatientRecord;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class PatientController extends Controller
 {
@@ -21,10 +22,16 @@ class PatientController extends Controller
         return view('patient.dashboard', compact('patient'));
     }
 
+
+
+
     public function patient()
     {
         return view('patient.dashboard');
     }
+
+
+
 
 
     public function view($id)
@@ -32,4 +39,16 @@ class PatientController extends Controller
         $patient = PatientRecord::findOrFail($id);
         return view('patient.show', compact('patient'));
     }
+
+
+
+    public function downloadPdf($id)
+    {
+        $patient = PatientRecord::findOrFail($id);
+
+        $pdf = Pdf::loadView('patient.pdf', compact('patient'));
+
+        return $pdf->download('patient-details.pdf');
+    }
+    
 }

@@ -100,6 +100,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    <a href="{{ route('patient.downloadpdf', ['id' => $patient->id]) }}" class="btn btn-success">Download as PDF</a>
                 </div>
             </div>
         </section>

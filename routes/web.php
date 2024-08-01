@@ -37,4 +37,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/doctor/patient/{id}', [DoctorController::class, 'deletePatient'])->name('doctor.deletepatient');
 
     Route::get('/patient/{id}', [PatientController::class, 'show'])->name('patient.show');
+
+
+    Route::get('/patient/{id}/download', [PatientController::class, 'downloadPdf'])->name('patient.downloadpdf');
+    Route::get('/patients/export', [DoctorController::class, 'export'])->name('patients.export');
+
+    Route::get('/patients/gender-chart', [DoctorController::class, 'genderChart'])->name('patients.genderchart');
+
+
 });
