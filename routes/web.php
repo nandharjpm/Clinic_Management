@@ -17,22 +17,18 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
-
 Route::middleware('auth')->group(function () {
     Route::get('/doctor/dashboard', [DashboardController::class, 'doctor'])->name('doctor.dashboard');
     Route::get('/patient/dashboard', [PatientController::class, 'patient'])->name('patient.dashboard');
-    // Route::post('/patient/dashboard', [PatientController::class, 'patient'])->name('patient.dashboard');
 
     Route::get('/doctor/addpatient', [DoctorController::class, 'addPatient'])->name('addpatient');
     Route::get('/doctor/viewpatientlist', [DoctorController::class, 'viewPatientlist'])->name('doctor.viewpatientlist');
     Route::post('/doctor/viewpatientlist', [DoctorController::class, 'storePatientlist'])->name('doctor.viewpatientlist');
 
-    Route::get('/doctor/patient/{id}', [PatientController::class, 'view'])->name('doctor.viewpatient');
+    Route::get('/doctor/patientview/{id}', [PatientController::class, 'view'])->name('doctor.viewpatient');
+
 
     Route::get('/doctor/patientlist', [DoctorController::class, 'viewPatientList'])->name('doctor.viewpatientlist');
-    // Route::get('/doctor/patient/{id}', [DoctorController::class, 'viewPatient'])->name('doctor.viewpatient');
-
-    Route::get('/doctor/patient/{id}', [PatientController::class, 'view'])->name('doctor.viewpatient');
 
 
     Route::put('/doctor/patient/{id}', [DoctorController::class, 'updatePatient'])->name('doctor.updatepatient');
